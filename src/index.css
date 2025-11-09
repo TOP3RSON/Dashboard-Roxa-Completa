@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 100.0000% 98.0392%;
+    --foreground: 241.8750 27.5862% 22.7451%;
+    --card: 0 0% 100%;
+    --card-foreground: 241.8750 27.5862% 22.7451%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 241.8750 27.5862% 22.7451%;
+    --primary: 252.8926 55.7604% 57.4510%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 251.2500 100% 93.7255%;
+    --secondary-foreground: 250.3125 33.3333% 37.6471%;
+    --muted: 240 50.0000% 96.0784%;
+    --muted-foreground: 240 12.1951% 48.2353%;
+    --accent: 220 100.0000% 92.3529%;
+    --accent-foreground: 241.8750 27.5862% 22.7451%;
+    --destructive: 351.2281 100% 66.4706%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 34.7826% 90.9804%;
+    --input: 240 34.7826% 90.9804%;
+    --ring: 252.8926 55.7604% 57.4510%;
+    --chart-1: 252.8926 55.7604% 57.4510%;
+    --chart-2: 250.7143 94.9153% 76.8627%;
+    --chart-3: 240 82.0225% 65.0980%;
+    --chart-4: 244.0602 93.0070% 71.9608%;
+    --chart-5: 244.6957 47.3251% 47.6471%;
+    --sidebar: 240 50.0000% 96.0784%;
+    --sidebar-foreground: 241.8750 27.5862% 22.7451%;
+    --sidebar-primary: 252.8926 55.7604% 57.4510%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 100.0000% 92.3529%;
+    --sidebar-accent-foreground: 241.8750 27.5862% 22.7451%;
+    --sidebar-border: 240 34.7826% 90.9804%;
+    --sidebar-ring: 252.8926 55.7604% 57.4510%;
+    --font-sans: Alan Sans, ui-sans-serif, sans-serif, system-ui;
+    --font-serif: Georgia, serif;
+    --font-mono: JetBrains Mono, monospace;
+    --radius: 0.5rem;
+    --shadow-x: 0px;
+    --shadow-y: 4px;
+    --shadow-blur: 10px;
+    --shadow-spread: 0px;
+    --shadow-opacity: 0.12;
+    --shadow-color: #2d2d53;
+    --shadow-2xs: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.06);
+    --shadow-xs: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.06);
+    --shadow-sm: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 1px 2px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 1px 2px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow-md: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 2px 4px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow-lg: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 4px 6px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow-xl: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 8px 10px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow-2xl: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.30);
+    --tracking-normal: 0.05em;
+    --spacing: 0.25rem;
+  }
+
+  .dark {
+    --background: 240 25.4902% 10%;
+    --foreground: 240 48.7179% 92.3529%;
+    --card: 240 27.7778% 14.1176%;
+    --card-foreground: 240 48.7179% 92.3529%;
+    --popover: 240 27.7778% 14.1176%;
+    --popover-foreground: 240 48.7179% 92.3529%;
+    --primary: 252.3214 100% 78.0392%;
+    --primary-foreground: 240 25.4902% 10%;
+    --secondary: 244.2857 32.8125% 25.0980%;
+    --secondary-foreground: 242.9508 100% 88.0392%;
+    --muted: 241.7647 33.3333% 20%;
+    --muted-foreground: 241.8750 20.2532% 69.0196%;
+    --accent: 241.2500 33.3333% 28.2353%;
+    --accent-foreground: 240 48.7179% 92.3529%;
+    --destructive: 351.2281 100% 66.4706%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 241.7647 26.1538% 25.4902%;
+    --input: 241.7647 26.1538% 25.4902%;
+    --ring: 252.3214 100% 78.0392%;
+    --chart-1: 252.3214 100% 78.0392%;
+    --chart-2: 231.2195 44.0860% 63.5294%;
+    --chart-3: 207.5342 89.0244% 67.8431%;
+    --chart-4: 175.4286 41.8327% 50.7843%;
+    --chart-5: 326.4179 100.0000% 73.7255%;
+    --sidebar: 240 27.7778% 14.1176%;
+    --sidebar-foreground: 240 48.7179% 92.3529%;
+    --sidebar-primary: 252.3214 100% 78.0392%;
+    --sidebar-primary-foreground: 240 25.4902% 10%;
+    --sidebar-accent: 241.2500 33.3333% 28.2353%;
+    --sidebar-accent-foreground: 240 48.7179% 92.3529%;
+    --sidebar-border: 241.7647 26.1538% 25.4902%;
+    --sidebar-ring: 252.3214 100% 78.0392%;
+    --font-sans: Alan Sans, ui-sans-serif, sans-serif, system-ui;
+    --font-serif: Georgia, serif;
+    --font-mono: JetBrains Mono, monospace;
+    --radius: 0.5rem;
+    --shadow-x: 0px;
+    --shadow-y: 4px;
+    --shadow-blur: 10px;
+    --shadow-spread: 0px;
+    --shadow-opacity: 0.12;
+    --shadow-color: #2d2d53;
+    --shadow-2xs: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.06);
+    --shadow-xs: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.06);
+    --shadow-sm: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 1px 2px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 1px 2px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow-md: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 2px 4px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow-lg: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 4px 6px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow-xl: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.12), 0px 8px 10px -1px hsl(240 29.6875% 25.0980% / 0.12);
+    --shadow-2xl: 0px 4px 10px 0px hsl(240 29.6875% 25.0980% / 0.30);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    letter-spacing: var(--tracking-normal);
+  }
+}
